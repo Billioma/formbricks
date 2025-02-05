@@ -48,8 +48,9 @@ export function Sidebar(): React.JSX.Element {
         </div>
         <div className="mt-6 pt-6">
           <div className="space-y-1 px-2">
-            {secondaryNavigation.map((item) => (
+            {secondaryNavigation.map((item, i) => (
               <a
+                key={i}
                 key={item.name}
                 href={item.href}
                 className="group flex items-center rounded-md px-2 py-2 text-sm font-medium leading-6 text-cyan-100 hover:bg-cyan-600 hover:text-white">
