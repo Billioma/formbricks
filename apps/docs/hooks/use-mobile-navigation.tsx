@@ -9,8 +9,8 @@ export const useIsInsideMobileNavigation = (): boolean => {
 
 export const useMobileNavigationStore = create<{
   isOpen: boolean;
-  open: () => void;
-  close: () => void;
+  open?: () => void;
+  close?: () => void;
   toggle: () => void;
 }>()((set) => ({
   isOpen: false,
