@@ -114,6 +114,7 @@ export default function AppPage(): React.JSX.Element {
               </div>
             </div>
           </div>
+          
           <div className="mt-4 rounded-lg border border-slate-300 bg-slate-100 p-6 dark:border-slate-600 dark:bg-slate-900">
             <h3 className="text-lg font-semibold text-slate-900 dark:text-white">2. Widget Logs</h3>
             <p className="text-slate-700 dark:text-slate-300">
@@ -175,6 +176,7 @@ export default function AppPage(): React.JSX.Element {
               </p>
             </div>
           </div>
+          
           <div className="p-6">
             <div>
               <button
@@ -200,6 +202,7 @@ export default function AppPage(): React.JSX.Element {
               </p>
             </div>
           </div>
+          
           <div className="p-6">
             <div>
               <button
