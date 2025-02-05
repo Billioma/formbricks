@@ -32,9 +32,9 @@ export function Sidebar(): React.JSX.Element {
         className="mt-5 flex flex-1 flex-col divide-y divide-cyan-800 overflow-y-auto"
         aria-label="Sidebar">
         <div className="space-y-1 px-2">
-          {navigation.map((item) => (
+          {navigation.map((item, i) => (
             <a
-              key={item.name}
+              key={i}
               href={item.href}
               className={classNames(
                 item.current ? "bg-cyan-800 text-white" : "text-cyan-100 hover:bg-cyan-600 hover:text-white",
@@ -51,7 +51,6 @@ export function Sidebar(): React.JSX.Element {
             {secondaryNavigation.map((item, i) => (
               <a
                 key={i}
-                key={item.name}
                 href={item.href}
                 className="group flex items-center rounded-md px-2 py-2 text-sm font-medium leading-6 text-cyan-100 hover:bg-cyan-600 hover:text-white">
                 <item.icon className="mr-4 h-6 w-6 text-cyan-200" aria-hidden="true" />
